@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Benjamin Blocksom | Portfolio </title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <header class="hero" id="hero">
+    <div class="hero-inner">
+      <h1>
+        Hello, I'm <span>Benjamin Blocksom</span><small>.</small><br>
+        I'm a front-end web developer<small>.</small>
+      </h1>
+      <a href="#work" class="btn">See my work</a>
+    </div>
+  </header>
+  <nav class="positioned">
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <!-- <li><a href="#">Articles</a></li> -->
+      <li><a href="#contact-form">Contact</a></li>
+    </ul>
+  </nav>
+  <section class="about" id="#about">
+    <h2>About</h2>
+    <p>Front-end developer with 2 years experience designing and coding responsive, mobile-first web applications and pages. My focus is on accessibility, HTML e-mail campaign development, and clean UX/UI. I am current with software development practices such as Test-Driven Design (TDD), DRY coding, version control (GIT), and using technical sophistication for troubleshooting and problem solving.<p>
+
+    <p>Before coming the world of web development, I spent many years as a translator, working with the Portuguese-English and Spanish-English language pairs. During that time, my work helped companies like HBO, The New York Times, and Citibank. By nature, translation requires a high-level of attention to detail, particularly in editing and formatting. I bring the lessons learned from replicating the form of thousands of documents with me to helping designers bring their creations to life on the web, regardless of the device.</p>
+
+    <a href="#contact-form">Let's work together!</a>
+  </section>
+  <section class="deck" id="work">
+    <img src="./img/etchy-sketch.png" alt="">
+    <img src="./img/newsletter-CEFLI.jpg" alt="">
+    <img src="./img/keys-make-sounds.png" alt="">
+    <img src="./img/transaction-hummingbird.png" alt="">
+    <img src="./img/jotter-down.png" alt="">
+  </section>
+  </section>
+  <section class="contact-form" id="contact-form">
+    <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+         <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
+    </svg>
+    <div class="all">
+      <form action="" class="items">
+        <h1>Contact Me</h1>
+
+        <div class="error-items">
+          <p style="color:red" class="error"></p>
+        </div>
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" required placeholder="Enter Your Name" class="name" />
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input type="email" required placeholder="Your Email" id="email" class="normal" />
+        </div>
+
+        <div class="area">
+          <label for="message" class="area-label">Message</label>
+          <textarea type="text" placeholder="Message" required id="message" class="txt"></textarea>
+        </div>
+        <button>Send</button>
+      </form>
+    </div>
+
+    <p class="success"></p>
+  </section>
+  <script src="./script.js"></script>
+</body>
+
+</html>
