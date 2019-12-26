@@ -8,6 +8,7 @@
 
   :root {
     --off-white: #f6f3ea;
+    --offer-white: #f3f9dd;
     --near-black: #252934;
     --black: #333333;
     --last-orange: #ee7752;
@@ -35,11 +36,11 @@
   	position: relative;
   	padding: 10em 10%;
   	background: var(--dark-blue);
-  	color: #fff;
   	text-align: center;
   }
   section h2 {
-  	margin: 0;
+    color: var(--off-white);
+  	margin: 15px;
   	padding: 0;
   	font-size: 2.8em;
   	font-weight: 400;
@@ -70,16 +71,15 @@
   	display: inline-block;
   	vertical-align: top;
   }
-
   .icon {
   	display: block;
   	width: 2em;
   	height: 2em;
   	border-radius: 50%;
   	background: rgba(0,0,0,0.1);
-  	color: #000;
+  	color: #fff;
   	text-align: center;
-  	font-size: 5em;
+  	font-size: 8em;
   	line-height: 2em;
   	margin: 0 auto;
   }
@@ -122,6 +122,7 @@
   }
   h1 {
     font-size: 2.6em;
+    color: var(--near-black)
   }
   h1 span {
     color: var(--off-white);
@@ -149,7 +150,7 @@
   form {
     width: 75%;
     margin: 25px auto 0 auto;
-    color: var(--off-white);
+    color: var(--near-black);
   }
   form h1 {
     margin: 0 0 25px 0;
@@ -169,7 +170,7 @@
   form textarea {
     padding: 5px 12px;
     width: 80%;
-    color: #fff;
+    color: var(--near-black);
     font-size: .9em;
     background-color: rgba(246, 243, 234,.8);
     outline: none;
@@ -211,7 +212,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: linear-gradient(-110deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background: linear-gradient(-170deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
   }
@@ -222,10 +223,24 @@
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    border: 3px solid rgba(12, 12, 10, 0.8);
+    border: 3px solid #333333;
     border-radius: 5px;
     text-decoration: none;
-    color: rgba(12, 12, 10, 0.8);
+    color: #333333;
+  }
+  .hero a, a:visited {
+    color: var(--off-white);
+    text-decoration: none;
+    transition: transform 1s;
+    transition: font-size 1s;
+  }
+  .hero a:hover {
+    transform: scale(1.1);
+    color: #eaedf6;
+    font-size: 1.08em;
+  }
+  .btn:hover {
+    transform: scale(1.1);
   }
   .positioned {
     position: sticky;

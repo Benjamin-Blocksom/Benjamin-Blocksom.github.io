@@ -12,7 +12,7 @@
   <header class="hero" id="hero">
     <div class="hero-inner">
       <h1>
-        Hello, I'm <span>Benjamin Blocksom</span><small>.</small><br>
+        Hello, I'm <span><a href="#about">Benjamin Blocksom</a></span><small>.</small><br>
         I'm a front-end web developer<small>.</small>
       </h1>
       <a href="#work" class="btn">See my work</a>
@@ -27,18 +27,19 @@
       <li><a href="#contact-form">Contact</a></li>
     </ul>
   </nav>
-  <section class="col-2 about" id="#about">
+  <section class="col-2 color ss-style-halfcircle" id="about">
     <div class="column text">
       <h2>About</h2>
-      <p>Intermediate web developer specializing in front-end development with solid fundamentals in the big three (HTML, CSS, and JavaScript). Well-versed in current concerns like responsive design, accessibility, and keeping code fast, DRY, and legible. Plays nice with other kids.<p>
+      <p>Front-end developer with solid fundamentals in the big three (HTML, CSS, and JavaScript). Well-versed in current concerns like responsive design, accessibility, and keeping code fast, DRY, and legible. Plays nice with other kids.<p>
+            <p><a href="#contact-form">Let's work together!</a></p>
     </div>
 
   <div class="column">
     <img class="icon" src="./img/html-css-js.png" alt="Email icon">
   </div>
-    <a href="#contact-form">Let's work together!</a>
+
   </section>
-  <section class="col-3 ss-style-doublediagonal">
+  <section class="col-3 ss-style-halfcircle" id="work">
     <h2>Work Samples</h2><br>
   <div class="column">
     <img class="icon" src="./img/envelope.svg" alt="Email icon">
@@ -51,41 +52,31 @@
   <div class="column">
       <img class="icon" src="./img/js-icon.svg" alt="JS logo">
 
-    <p>JavaScript is at the heart of bringing web pages to life. I use it on this site below to run a serverless form handler. Here are a few other nuggets I've developed on the side, usually for entertaining my young children (two- and four-year-olds, respectively).</p>
+    <p>JavaScript is at the heart of bringing web pages to life. I use it on this site below to run a <a href="#contact-form">
+      serverless form handler</a>. Here are a few other nuggets I've developed on the side, usually for entertaining my two young kids.</p>
   </div>
 </section>
-  <section class="col-2 ss-style-doublediagonal" id="work">
-    <div class="column text deck">
-    <img src="./img/etchy-sketch.png" alt="">
-    <img src="./img/newsletter-CEFLI.jpg" alt="">
-    <img src="./img/keys-make-sounds.png" alt="">
-    <img src="./img/transaction-hummingbird.png" alt="">
-    <img src="./img/jotter-down.png" alt="">
-    </div>
-  </section>
+
   <section class="contact-form color ss-style-halfcircle" id="contact-form">
     <div class="all">
       <form action="" class="items">
-        <h1>Contact Me</h1>
+        <h2>Contact Me</h2>
 
         <div class="error-items">
           <p style="color:red" class="error"></p>
         </div>
         <div>
-          <label for="name">Name</label>
-          <input type="text" id="name" required placeholder="Enter Your Name" class="name" />
+          <input type="text" id="name" required placeholder="Your Name" class="name" />
         </div>
 
         <div>
-          <label for="email">Email</label>
-          <input type="email" required placeholder="Your Email" id="email" class="normal" />
+          <input type="email" required placeholder="Email" id="email" class="normal" />
         </div>
 
         <div class="area">
-          <label for="message" class="area-label">Message</label>
           <textarea type="text" placeholder="Message" required id="message" class="txt"></textarea>
         </div>
-        <button>Send</button>
+        <button class="btn">Send</button>
       </form>
     </div>
     <p class="success"></p>
