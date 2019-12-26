@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>Benjamin Blocksom | Portfolio </title>
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
@@ -26,26 +27,27 @@
       <li><a href="#contact-form">Contact</a></li>
     </ul>
   </nav>
-  <section class="about" id="#about">
-    <h2>About</h2>
-    <p>Front-end developer with 2 years experience designing and coding responsive, mobile-first web applications and pages. My focus is on accessibility, HTML e-mail campaign development, and clean UX/UI. I am current with software development practices such as Test-Driven Design (TDD), DRY coding, version control (GIT), and using technical sophistication for troubleshooting and problem solving.<p>
+  <section class="col-2 about" id="#about">
+    <div class="column text">
+      <h2>About</h2>
+      <p>Intermediate web developer specializing in front-end development with solid fundamentals in the big three (HTML, CSS, and JavaScript). Well-versed in current concerns like responsive design, accessibility, and keeping code fast, DRY, and legible. Plays nice with other kids.<p>
+    </div>
 
-    <p>Before coming the world of web development, I spent many years as a translator, working with the Portuguese-English and Spanish-English language pairs. During that time, my work helped companies like HBO, The New York Times, and Citibank. By nature, translation requires a high-level of attention to detail, particularly in editing and formatting. I bring the lessons learned from replicating the form of thousands of documents with me to helping designers bring their creations to life on the web, regardless of the device.</p>
-
+  <div class="column">
+    <span class="icon"></span>
+  </div>
     <a href="#contact-form">Let's work together!</a>
   </section>
-  <section class="deck" id="work">
+  <section class="col-2 ss-style-doublediagonal" id="work">
+    <div class="column text deck">
     <img src="./img/etchy-sketch.png" alt="">
     <img src="./img/newsletter-CEFLI.jpg" alt="">
     <img src="./img/keys-make-sounds.png" alt="">
     <img src="./img/transaction-hummingbird.png" alt="">
     <img src="./img/jotter-down.png" alt="">
+    </div>
   </section>
-  </section>
-  <section class="contact-form" id="contact-form">
-    <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
-         <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
-    </svg>
+  <section class="contact-form color ss-style-halfcircle" id="contact-form">
     <div class="all">
       <form action="" class="items">
         <h1>Contact Me</h1>
@@ -70,7 +72,6 @@
         <button>Send</button>
       </form>
     </div>
-
     <p class="success"></p>
   </section>
   <script src="./script.js"></script>

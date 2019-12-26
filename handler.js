@@ -24,7 +24,7 @@ app.post("/", (req, res) => {
   const message = req.body.message;
 
   const emailParams = {
-    Source: "benjamin.blocksom@gmail.com",
+    Source: "benjamin@benjaminblocksom.com",
     Destination: {
       ToAddresses: ["benjamin.blocksom@gmail.com"] // Your verfied Email
     },
@@ -38,7 +38,7 @@ app.post("/", (req, res) => {
       },
       Subject: {
         Charset: "UTF-8",
-        Data: "You Received a Message from www.benblocksom.com"
+        Data: "You Received a Message from www.benjaminblocksom.com"
       }
     }
   };
