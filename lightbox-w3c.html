@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="./slideshow-w3c-styles.css">
+</head>
+
+<body>
+  <!-- Images used to open the lightbox -->
+  <div class="image-triggers">
+    <img src="https://picsum.photos/id/237/600/400/" onclick="openModal();currentSlide(1)" class="hover-shadow">
+    <img src="https://picsum.photos/id/238/600/400" onclick="openModal();currentSlide(2)" class="hover-shadow">
+    <img src="https://picsum.photos/id/239/600/400" onclick="openModal();currentSlide(3)" class="hover-shadow">
+    <img src="https://picsum.photos/id/240/600/400" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+      <div class="modal-slides">
+        <div class="numbertext">1 / 4</div>
+        <img src="https://picsum.photos/id/237/1000/350" style="width:100%">
+      </div>
+
+      <div class="modal-slides">
+        <div class="numbertext">2 / 4</div>
+        <img src="https://picsum.photos/id/238/1000/350" style="width:100%">
+      </div>
+
+      <div class="modal-slides">
+        <div class="numbertext">3 / 4</div>
+        <img src="https://picsum.photos/id/239/1000/350" style="width:100%">
+      </div>
+
+      <div class="modal-slides">
+        <div class="numbertext">4 / 4</div>
+        <img src="https://picsum.photos/id/240/1000/350" style="width:100%">
+      </div>
+
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <!-- Thumbnail image controls -->
+      <div class="column">
+        <img class="demo" src="https://picsum.photos/id/237/1000/350" onclick="currentSlide(1)" alt="Nature">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="https://picsum.photos/id/238/1000/350" onclick="currentSlide(2)" alt="Snow">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="https://picsum.photos/id/239/1000/350" onclick="currentSlide(3)" alt="Mountains">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="https://picsum.photos/id/240/1000/350" onclick="currentSlide(4)" alt="Lights">
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="slideshow.js"></script>
+</body>
+
+</html>
