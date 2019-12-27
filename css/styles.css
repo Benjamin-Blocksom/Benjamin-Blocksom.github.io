@@ -194,7 +194,6 @@
   .deck {
     background-color: var(--off-white);
   }
-
   .deck, .work {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -242,6 +241,30 @@
   .btn:hover {
     transform: scale(1.1);
   }
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    max-width: 100%;
+    height: 400px;
+    max-height: 100%;
+  }
+
+.modal-close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
   .positioned {
     position: sticky;
     top: 0px;
@@ -264,6 +287,8 @@ section::after {
 }
 
 /* Individual Styles */
+
+/* Half circle */
 .ss-style-halfcircle::before {
 	left: 50%;
 	z-index: 10;
@@ -304,6 +329,9 @@ section::after {
 	-webkit-transform-origin: 3% 0;
 	transform-origin: 3% 0;
 }
+/* ------------------ */
+/* End divider styles */
+
 
 /* Hero Animation */
   @keyframes gradientBG {
