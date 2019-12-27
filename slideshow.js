@@ -23,7 +23,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
   let i;
-  const slides = document.getElementsByClassName("modal-s lides");
+  const slides = document.getElementsByClassName("lb-images");
   const dots = document.getElementsByClassName("demo");
   const captionText = document.getElementById("caption");
   if (n > slides.length) {slideIndex = 1}
