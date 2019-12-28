@@ -6,6 +6,7 @@
   <title>Benjamin Blocksom | Portfolio </title>
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/lightbox.css">
 </head>
 
 <body>
@@ -39,7 +40,45 @@
   </div>
 
   </section>
-  <section class="col-3 ss-style-halfcircle" id="work">
+  <section class="gallery-lightbox">
+<h2>Work</h2>
+    <div class="image-triggers">
+      <img src="./img/transaction-hummingbird.jpg" alt="envelope" onclick="openModal();currentSlide(1)">
+      <img src="./img/jotter-down.png" alt="stock image" onclick="openModal();currentSlide(2)">
+      <img src="./img/newsletter-CEFLI.png" alt="stock image" onclick="openModal();currentSlide(3)">
+      <img src="./img/loudounBrewery-cell.png" alt="stock image" onclick="openModal();currentSlide(4)">
+    </div>
+
+    <div class="lightbox">
+      <button class="close-btn cursor" onclick="closeModal()">&times;</button>
+
+      <div class="lb-content">
+        <div class="lb-images">
+          <img src=".img/transaction-hummingbird-inner.jpeg" alt="stock image">
+        </div>
+        <div class="lb-images">
+          <img src="https://picsum.photos/id/239/2400" alt="stock image">
+        </div>
+        <div class="lb-images">
+          <img src="https://picsum.photos/id/240/2400" alt="stock image">
+        </div>
+        <div class="lb-images">
+          <img src="https://picsum.photos/id/241/2400" alt="stock image">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- Caption text -->
+        <div class="container-caption">
+          <!-- h1   -->
+          <p id="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section class="col-3 ss-style-halfcircle" id="work">
     <h2>Work Samples</h2><br>
   <div class="column">
     <img class="icon" src="./img/envelope.svg" alt="Email icon">
@@ -55,7 +94,7 @@
     <p>JavaScript is at the heart of bringing web pages to life. I use it on this site below to run a <a href="#contact-form">
       serverless form handler</a>. Here are a few other nuggets I've developed on the side, usually for entertaining my two young kids.</p>
   </div>
-</section>
+</section> -->
 
   <section class="contact-form color ss-style-halfcircle" id="contact-form">
     <div class="all">
@@ -76,12 +115,16 @@
         <div class="area">
           <textarea type="text" placeholder="Message" required id="message" class="txt"></textarea>
         </div>
-        <button class="btn">Send</button>
+        <button class='btn'>Send</button>
       </form>
     </div>
     <p class="success"></p>
   </section>
+  <div class="modal-outer">
+    <div class="modal-overlay modal-inner" id="modal-overlay"></div>
+  </div>
   <script src="./script.js"></script>
+  <script src="./lightbox.js"></script>
 </body>
 
 </html>

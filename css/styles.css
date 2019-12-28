@@ -80,10 +80,7 @@
   	display: block;
   	width: 2em;
   	height: 2em;
-  	border-radius: 50%;
-  	background: rgba(0,0,0,0.1);
   	color: #fff;
-  	text-align: center;
   	font-size: 8em;
   	line-height: 2em;
   	margin: 0 auto;
@@ -92,7 +89,7 @@
   	color: #fff;
   }
   .color {
-  	background: var(--off-white);
+  	background: var(--light-blue);
     color: #333333;
   }
   body {
@@ -199,7 +196,7 @@
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
   }
-  .hero .btn {
+  .btn {
     display: block;
     width: 200px;
     padding: 1em;
@@ -211,7 +208,8 @@
     text-decoration: none;
     color: #333333;
   }
-  .hero a, a:visited {
+
+  .hero a, a:visited, .btn {
     color: var(--off-white);
     text-decoration: none;
     transition: transform 1s;

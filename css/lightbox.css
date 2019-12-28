@@ -1,0 +1,131 @@
+.image-triggers {
+  display: grid;
+  grid-gap: .6em;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.image-triggers img {
+  display: block;
+  width: 100%;
+  box-shadow: -1px 0px 0px rgba(0, 0, 0, 0.06),;
+}
+
+
+.lightbox.open {
+  display: flex;
+  margin: auto;
+  padding-top: 15px;
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1010;
+  height: auto;
+  max-height: 100%;
+  width: 600px;
+  max-width: 100%;
+  overflow: auto;
+  background-color: #333333;
+}
+
+.close-btn {
+  border: 0px none;
+  color: #f6f3ea;
+  background-color: #333333;
+  border-radius: 50%;
+  padding-top: 2px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 30px;
+  height: 30px;
+  font-size: 1.8em;
+  font-weight: 600;
+  outline: currentcolor none medium;
+  opacity: 1;
+}
+
+.close-btn:hover, .close-btn:active {
+  opacity: .8;
+}
+
+.lb-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.lb-images {
+  display: none;
+}
+
+.lb-images img {
+  width: 100%;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 5px;
+  margin-top: -50px;
+  color: #f6f3ea;
+  font-weight: 600;
+  font-size: 2.0em;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.modal-outer {
+  background: rgba(0,0,0,0.7);
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  /* Hide this modal until needed*/
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+
+.modal-outer img {
+  width: 100%;
+}
+
+.modal-outer.open {
+  opacity: 1;
+  pointer-events: all;
+}
