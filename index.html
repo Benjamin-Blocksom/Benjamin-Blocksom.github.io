@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>Benjamin Blocksom | Portfolio </title>
   <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="./css/lightbox.css">
 </head>
@@ -31,7 +32,7 @@
   <section class="col-2 color ss-style-halfcircle" id="about">
     <div class="column text">
       <h2>About</h2>
-      <p>Front-end developer with solid fundamentals in the big three (HTML, CSS, and JavaScript). Well-versed in current concerns like responsive design, accessibility, and keeping code fast, DRY, and legible. Plays nice with other kids.<p>
+      <p>Front-end developer with solid fundamentals in the big three (HTML, CSS, and JavaScript). Well-versed in current concerns like responsive design, accessibility, and keeping code fast, DRY, and legible. Plays nice with other kids.</p>
             <p><a href="#contact-form">Let's work together!</a></p>
     </div>
 
@@ -40,6 +41,9 @@
   </div>
 
   </section>
+  <svg id="curveUpColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <path d="M0 100 C 20 0 50 0 100 100 Z"/>
+  </svg>
   <section class="gallery-lightbox">
 <h2>Work</h2>
     <div class="image-triggers">
@@ -53,27 +57,48 @@
       <button class="close-btn cursor" onclick="closeModal()">&times;</button>
 
       <div class="lb-content">
+
         <div class="lb-images">
-          <img src=".img/transaction-hummingbird-inner.jpeg" alt="stock image">
+          <img src="./img/transaction-hummingbird.jpg" alt="stock image">
+          <div class="container-caption">
+            <h3>HTML/CSS Email Receipt</h3>
+            <p id="caption">Transactional e-mails give businesses a great chance to re-inforce branding and strengthen customer relationships. This HTML email concept focuses on a clean design that gracefully deprecates, knowing that email clients are fickle. To address this, I emphasized clean typographic over images to convey the transactional data.</p>
+            <br>
+            <button><a href="#">View <i class="material-icons">launch</i></a></button>
+          </div>
         </div>
         <div class="lb-images">
-          <img src="https://picsum.photos/id/239/2400" alt="stock image">
+          <img src="./img/jotter-down.png" alt="Jotter-Down microblog">
+          <div class="container-caption">
+            <h3>Jotter-Down</h3>
+            <p id="caption">This microblogger concept hits all of the key elements for a modern working site. Built with Ruby on Rails and emphasizing Test-Driven Design, MVC architectural design, and includes all RESTful actions. The idea here is a working micro-blogger (think twitter) platform deployed on a professional grade level.</p>
+            <br>
+            <button><a href="#">View <i class="material-icons">launch</i></a></button>
+          </div>
         </div>
         <div class="lb-images">
-          <img src="https://picsum.photos/id/240/2400" alt="stock image">
+          <img src="./img/newsletter-CEFLI.png" alt="stock image">
+          <div class="container-caption">
+            <h3>CEFLI Newsletter</h3>
+            <p id="caption">The original campaign message was in Brazilian Portuguese, which I translated and then gave this formatting. CSS can be thorny for these as styles are inlined, and HTML is almost exclusively table-based. The trick here is to "code like it's 1999" while keeping an eye on the concerns of the 2020s, like accessibility and responsiveness.</p>
+            <br>
+            <button><a href="#">View <i class="material-icons">launch</i></a></button>
+          </div>
         </div>
         <div class="lb-images">
-          <img src="https://picsum.photos/id/241/2400" alt="stock image">
+          <img src="./img/loudounBrewery-cell.png" alt="stock image">
+          <div class="container-caption">
+            <h3>Loudoun Brewery</h3>
+            <p id="caption">This holiday greeting was an interesting challenge since I had to create all the copy and images. The holiday message and CTA's were given in the text, with imagery lending a supporting role. Inspiration came from MailChimp's own newsletter and we also used them to run the campaign. The campaign ran on MailChimp and had a 93.5% delivery rate with 45% opens. </p>
+            <br>
+            <button><a href="#">View <i class="material-icons">launch</i></a></button>
+          </div>
         </div>
 
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-        <!-- Caption text -->
-        <div class="container-caption">
-          <!-- h1   -->
-          <p id="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
+
       </div>
     </div>
   </section>
@@ -95,8 +120,10 @@
       serverless form handler</a>. Here are a few other nuggets I've developed on the side, usually for entertaining my two young kids.</p>
   </div>
 </section> -->
-
-  <section class="contact-form color ss-style-halfcircle" id="contact-form">
+  <svg id="curveDownColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <path d="M0 0 C 50 100 80 100 100 0 Z"/>
+  </svg>
+  <section class="contact-form color" id="contact-form">
     <div class="all">
       <form action="" class="items">
         <h2>Contact Me</h2>
@@ -105,6 +132,10 @@
           <p style="color:red" class="error"></p>
         </div>
         <div>
+          <div class="area">
+            <textarea type="text" placeholder="Message" required id="message" class="txt"></textarea>
+          </div>
+
           <input type="text" id="name" required placeholder="Your Name" class="name" />
         </div>
 
@@ -112,14 +143,17 @@
           <input type="email" required placeholder="Email" id="email" class="normal" />
         </div>
 
-        <div class="area">
-          <textarea type="text" placeholder="Message" required id="message" class="txt"></textarea>
-        </div>
-        <button class='btn'>Send</button>
+        <button>Send</button>
       </form>
     </div>
     <p class="success"></p>
   </section>
+  <footer>
+    <p>
+      benjamin.blocksom@gmail.com
+
+    </p>
+  </footer>
   <div class="modal-outer">
     <div class="modal-overlay modal-inner" id="modal-overlay"></div>
   </div>

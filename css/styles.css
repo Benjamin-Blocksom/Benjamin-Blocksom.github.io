@@ -21,40 +21,66 @@
   /* General styles and layout */
 
   body {
-  	background: var(--dark-blue);
-  	color: #fff;
+  	background: var(--off-white);
+    color: rgba(0,0,0,.5);
   	font-family: 'Lato', Arial, sans-serif;
   }
   .container {
-  	overflow: hidden;
+    overflow: hidden;
     /* Prevent psuedo-elements from showing */
   }
   .container svg {
-  	display: block;
+    display: block;
   }
 
+  .container-caption {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    padding: 0px 25px 0 15px;
+  }
+  .container-caption h3{
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .container-caption button {
+    background-color: hsl(123,38%,70%,.6);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin-bottom: 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+  }
   section {
   	position: relative;
   	padding: 10em 10%;
-  	background: var(--dark-blue);
+  	background: var(--light-blue);
   	text-align: center;
   }
   section h2 {
-    color: var(--off-white);
   	margin: 15px;
   	padding: 0;
   	font-size: 2.8em;
   	font-weight: 400;
   }
-
+  section p {
+    color: rgba(10,10,0,.4);
+    font-size: 1.3em;
+    line-height: 1.5em;
+  }
+  .color {
+    background: var(--off-white);
+    color: #333333;
+  }
   .color section h2 {
     color: var(--near-black);
   }
-  section p {
-  	color: rgba(0,0,0,.3);
-  	font-size: 1.3em;
-  	line-height: 1.5;
-  }
+.gallery-lightbox {
+  margin-top: -5px;
+  background: var(--dark-blue);
+}
   .text:first-child {
   	text-align: right;
   }
@@ -78,19 +104,12 @@
   }
   .icon {
   	display: block;
-  	width: 2em;
-  	height: 2em;
+  	width: 1.5em;
+  	height: 1.5em;
   	color: #fff;
-  	font-size: 8em;
+  	font-size: 7em;
   	line-height: 2em;
   	margin: 0 auto;
-  }
-  section.color h2 {
-  	color: #fff;
-  }
-  .color {
-  	background: var(--light-blue);
-    color: #333333;
   }
   body {
     margin: 0;
@@ -113,7 +132,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: var(--black);
+    background-color: var(--near-black);
   }
   nav li {
     float: left;
@@ -145,17 +164,16 @@
     margin-top: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
-    border-top: 1px solid rgba(215,255,185,.4)
+
   }
   form input,
   form textarea {
     padding: 5px 12px;
-    width: 80%;
+    width: 75%;
     color: var(--near-black);
     font-size: .9em;
     background-color: rgba(246, 243, 234,.8);
     outline: none;
-    border: 1px solid rgba(0, 0, 0, 0);
   }
   form input[type="submit"] {
     width: auto;
@@ -170,7 +188,11 @@
   form textarea:focus,
   form input[type="submit"]:hover {
     border-color: #f29f27;
-    background-color: var(--last-orange);
+    background-color: var(--off-white);
+  }
+
+  footer {
+    padding-left: 15px;
   }
   .deck {
     background-color: var(--off-white);
@@ -187,7 +209,7 @@
   }
   .hero {
     width: 100%;
-    height: 100vh;
+    height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -209,8 +231,8 @@
     color: #333333;
   }
 
-  .hero a, a:visited, .btn {
-    color: var(--off-white);
+  .hero  a, .hero a:visited, {
+    color: rgba(0,0,0,.5);
     text-decoration: none;
     transition: transform 1s;
     transition: font-size 1s;
@@ -310,6 +332,11 @@ section::after {
 	transform: rotate(-3deg);
 	-webkit-transform-origin: 3% 0;
 	transform-origin: 3% 0;
+}
+#curveUpColor path,
+#curveDownColor path {
+	fill: #2980b9;
+	stroke: #2980b9;
 }
 /* ------------------ */
 /* End divider styles */
